@@ -39,3 +39,6 @@ sc config WdiSystemHost start= disabled
 
 sc stop WSearch
 sc config WSearch start= disabled
+
+shutdown /r /t 00
+exit
