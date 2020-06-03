@@ -22,11 +22,17 @@ sc config ScDeviceEnum start= disabled
 sc stop SCPolicySvc
 sc config SCPolicySvc start= disabled
 
+sc stop Sendevsvc
+sc config Sendevsvc start= disabled
+
 sc stop SmsRouter
 sc config SmsRouter start= disabled
 
 sc stop TermService
 sc config TermService start= disabled
+
+sc stop UsoSvc
+sc config UsoSvc start= disabled
 
 sc stop WwanSvc
 sc config WwanSvc start= disabled

@@ -8,6 +8,10 @@ sc stop ALG
 sc config ALG start= disabled
 sc delete ALG
 
+sc stop AppReadiness
+sc config AppReadiness start= disabled
+sc delete AppReadiness
+
 sc stop AppVClient
 sc config AppVClient start= disabled
 sc delete AppVClient
@@ -15,6 +19,10 @@ sc delete AppVClient
 sc stop AxInstSV
 sc config AxInstSV start= disabled
 sc delete AxInstSV
+
+sc stop BITS
+sc config BITS start= disabled
+sc delete BITS
 
 sc stop BTAGService
 sc config BTAGService start= disabled
@@ -28,6 +36,10 @@ sc stop bthserv
 sc config bthserv start= disabled
 sc delete bthserv
 
+sc stop camsvc
+sc config camsvc start= disabled
+sc delete camsvc
+
 sc stop CDPSvc
 sc config CDPSvc start= disabled
 sc delete CDPSvc
@@ -39,6 +51,10 @@ sc delete diagnosticshub.standardcollector.service
 sc stop diagtrack
 sc config diagtrack start= disabled
 sc delete diagtrack
+
+sc stop DusmSvc
+sc config DusmSvc start= disabled
+sc delete DusmSvc
 
 sc stop dmwappushservice
 sc config dmwappushservice start= disabled
@@ -56,13 +72,25 @@ sc stop FDResPub
 sc config FDResPub start= disabled
 sc delete FDResPub
 
+sc stop FrameServer
+sc config FrameServer start= disabled
+sc delete FrameServer
+
 sc stop fhsvc
 sc config fhsvc start= disabled
 sc delete fhsvc
 
+sc stop HvHost
+sc config HvHost start= disabled
+sc delete HvHost
+
 sc stop icssvc
 sc config icssvc start= disabled
 sc delete icssvc
+
+sc stop irmon
+sc config irmon start= disabled
+sc delete irmon
 
 sc stop IKEEXT
 sc config IKEEXT start= disabled
@@ -103,6 +131,10 @@ sc delete Netlogon
 sc stop NetTcpPortSharing
 sc config NetTcpPortSharing start= disabled
 sc delete NetTcpPortSharing
+
+sc stop NfsClnt
+sc config NfsClnt start= disabled
+sc delete NfsClnt
 
 sc stop p2pimsvc
 sc config p2pimsvc start= disabled
@@ -156,6 +188,10 @@ sc stop seclogon
 sc config seclogon start= disabled
 sc delete seclogon
 
+sc stop SEMgrSvc
+sc config SEMgrSvc start= disabled
+sc delete SEMgrSvc
+
 sc stop SENS
 sc config SENS start= disabled
 sc delete SENS
@@ -188,6 +224,10 @@ sc stop Spooler
 sc config Spooler start= disabled
 sc delete Spooler
 
+sc stop SSDPSRV
+sc config SSDPSRV start= disabled
+sc delete SSDPSRV
+
 sc stop ssh-agent
 sc config ssh-agent start= disabled
 sc delete ssh-agent
@@ -216,6 +256,10 @@ sc stop TrkWks
 sc config TrkWks start= disabled
 sc delete TrkWks
 
+sc stop tzautoupdate
+sc config tzautoupdate start= disabled
+sc delete tzautoupdate
+
 sc stop UevAgentService
 sc config UevAgentService start= disabled
 sc delete UevAgentService
@@ -231,6 +275,10 @@ sc delete VaultSvc
 sc stop vmicguestinterface
 sc config vmicguestinterface start= disabled
 sc delete vmicguestinterface
+
+sc stop vmicheartbeat
+sc config vmicheartbeat start= disabled
+sc delete vmicheartbeat
 
 sc stop vmickvpexchange
 sc config vmickvpexchange start= disabled
@@ -300,6 +348,10 @@ sc stop WPDBusEnum
 sc config WPDBusEnum start= disabled
 sc delete WPDBusEnum
 
+sc stop WMPNetworkSvc
+sc config WMPNetworkSvc start= disabled
+sc delete WMPNetworkSvc
+
 sc stop WpnService
 sc config WpnService start= disabled
 sc delete WpnService
@@ -340,11 +392,17 @@ sc config ScDeviceEnum start= disabled
 sc stop SCPolicySvc
 sc config SCPolicySvc start= disabled
 
+sc stop Sendevsvc
+sc config Sendevsvc start= disabled
+
 sc stop SmsRouter
 sc config SmsRouter start= disabled
 
 sc stop TermService
 sc config TermService start= disabled
+
+sc stop UsoSvc
+sc config UsoSvc start= disabled
 
 sc stop WwanSvc
 sc config WwanSvc start= disabled
