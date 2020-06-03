@@ -1,9 +1,7 @@
 # Win10 Privacy Guard
----
 
 ## Please read the readme before using the scripts.
 
----
 
 ### Introduction
 
@@ -15,9 +13,17 @@
 
 ### Services.msc
 
+#### services.msc.bat
+
 **Each deleted service is stopped, deactivated and deleted.**
 
 **If you want to uninstall one more service, or keep some of them, modify the services.msc.bat file at your convenience.**
+
+#### specific-services.msc.bat
+
+**Each specific service is stopped and desactivated.**
+
+**If you want to desactivate one more service, or keep some of them, modify the specific-services.msc.bat file at your convenience.**
 
 ---
 
