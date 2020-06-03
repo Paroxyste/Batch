@@ -7,7 +7,11 @@
 >**All scripts need to be run as Administrator.**
 > 
 >**Each script will perform a reboot of the machine.**
->
+
+---
+
+### AiO.bat
+
 >**The AiO script regroups all the modifications in 1 file. The actions on the services.msc are final.**
 
 ---
