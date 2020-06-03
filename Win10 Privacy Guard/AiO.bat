@@ -830,3 +830,6 @@ IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^0.0.0.0 wes.df.telemetry.microsoft.com>>%WI
 
 FIND /C /I "www.msftncsi.com" %WINDIR%\system32\drivers\etc\hosts
 IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^0.0.0.0 www.msftncsi.com>>%WINDIR%\System32\drivers\etc\hosts
+
+shutdown /r /t 00
+exit
