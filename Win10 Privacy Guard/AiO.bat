@@ -1,4 +1,4 @@
-powershell -executionpolicy remotesigned Remove-AppxPackage
+powershell Get-AppxPackage -AllUsers | Remove-AppxPackage
 
 net stop AJRouter
 sc config AJRouter start= disabled
