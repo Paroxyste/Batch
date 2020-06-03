@@ -1,12 +1,12 @@
 # Win10 Privacy Guard
-# Please read the readme before using the scripts.
-
 
 ### Introduction
 
-**Each script will perform a reboot of the machine.**
-
-**The AiO script regroups all the modifications in 1 file. The actions on the services.msc are final.**
+>**Please read the complet README before using the scripts.**
+>
+>**Each script will perform a reboot of the machine.**
+>
+>**The AiO script regroups all the modifications in 1 file. The actions on the services.msc are final.**
 
 ---
 
@@ -50,3 +50,10 @@ Get-AppxPackage *soundrecorder* | Remove-AppxPackage
 ``` batch
 Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 ```
+
+---
+
+### TEST
+
+**Windows 10 1609**
+**Windows 10 1809**
