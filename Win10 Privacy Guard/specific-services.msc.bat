@@ -10,8 +10,14 @@ sc config CscService start= disabled
 sc stop DPS
 sc config DPS start= disabled
 
+sc stop EFS
+sc config EFS start= disabled
+
 sc stop iphlpsvc
 sc config iphlpsvc start= disabled
+
+sc stop RmSvc
+sc config RmSvc start= disabled
 
 sc stop SCardSvr
 sc config SCardSvr start= disabled

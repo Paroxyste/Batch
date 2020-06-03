@@ -8,6 +8,10 @@ sc stop ALG
 sc config ALG start= disabled
 sc delete ALG
 
+sc stop AppMgmt
+sc config AppMgmt start= disabled
+sc delete AppMgmt
+
 sc stop AppReadiness
 sc config AppReadiness start= disabled
 sc delete AppReadiness
@@ -19,6 +23,10 @@ sc delete AppVClient
 sc stop AxInstSV
 sc config AxInstSV start= disabled
 sc delete AxInstSV
+
+sc stop Browser
+sc config Browser start= disabled
+sc delete Browser
 
 sc stop BITS
 sc config BITS start= disabled
@@ -32,6 +40,10 @@ sc stop BthAvctpSvc
 sc config BthAvctpSvc start= disabled
 sc delete BthAvctpSvc
 
+sc stop BthHFSrv
+sc config BthHFSrv start= disabled
+sc delete BthHFSrv
+
 sc stop bthserv
 sc config bthserv start= disabled
 sc delete bthserv
@@ -44,6 +56,14 @@ sc stop CDPSvc
 sc config CDPSvc start= disabled
 sc delete CDPSvc
 
+sc stop CDPUserSvc
+sc config CDPUserSvc start= disabled
+sc delete CDPUserSvc
+
+sc stop defragsvc
+sc config defragsvc start= disabled
+sc delete defragsvc
+
 sc stop diagnosticshub.standardcollector.service
 sc config diagnosticshub.standardcollector.service start= disabled
 sc delete diagnosticshub.standardcollector.service
@@ -52,6 +72,10 @@ sc stop diagtrack
 sc config diagtrack start= disabled
 sc delete diagtrack
 
+sc stop DoSvc
+sc config DoSvc start= disabled
+sc delete DoSvc
+
 sc stop DusmSvc
 sc config DusmSvc start= disabled
 sc delete DusmSvc
@@ -59,6 +83,10 @@ sc delete DusmSvc
 sc stop dmwappushservice
 sc config dmwappushservice start= disabled
 sc delete dmwappushservice
+
+sc stop EventSystem
+sc config EventSystem start= disabled
+sc delete EventSystem
 
 sc stop Fax
 sc config Fax start= disabled
@@ -72,6 +100,10 @@ sc stop FDResPub
 sc config FDResPub start= disabled
 sc delete FDResPub
 
+sc stop FontCache
+sc config FontCache start= disabled
+sc delete FontCache
+
 sc stop FrameServer
 sc config FrameServer start= disabled
 sc delete FrameServer
@@ -79,6 +111,14 @@ sc delete FrameServer
 sc stop fhsvc
 sc config fhsvc start= disabled
 sc delete fhsvc
+
+sc stop HomeGroupListener
+sc config HomeGroupListener start= disabled
+sc delete HomeGroupListener
+
+sc stop HomeGroupProvider
+sc config HomeGroupProvider start= disabled
+sc delete HomeGroupProvider
 
 sc stop HvHost
 sc config HvHost start= disabled
@@ -88,13 +128,29 @@ sc stop icssvc
 sc config icssvc start= disabled
 sc delete icssvc
 
+sc stop IKEEXT
+sc config IKEEXT start= disabled
+sc delete IKEEXT
+
 sc stop irmon
 sc config irmon start= disabled
 sc delete irmon
 
-sc stop IKEEXT
-sc config IKEEXT start= disabled
-sc delete IKEEXT
+sc stop KeyIso
+sc config KeyIso start= disabled
+sc delete KeyIso
+
+sc stop KtmRm
+sc config KtmRm start= disabled
+sc delete KtmRm
+
+sc stop LanmanServer
+sc config LanmanServer start= disabled
+sc delete LanmanServer
+
+sc stop LanmanWorkstation
+sc config LanmanWorkstation start= disabled
+sc delete LanmanWorkstation
 
 sc stop lfsvc
 sc config lfsvc start= disabled
@@ -112,6 +168,14 @@ sc stop MapsBroker
 sc config MapsBroker start= disabled
 sc delete MapsBroker
 
+sc stop MessagingService
+sc config MessagingService start= disabled
+sc delete MessagingService
+
+sc stop MSDTC
+sc config MSDTC start= disabled
+sc delete MSDTC
+
 sc stop MSiSCSI
 sc config MSiSCSI start= disabled
 sc delete MSiSCSI
@@ -124,9 +188,17 @@ sc stop NcbService
 sc config NcbService start= disabled
 sc delete NcbService
 
+sc stop NcdAutoSetup
+sc config NcdAutoSetup start= disabled
+sc delete NcdAutoSetup
+
 sc stop Netlogon
 sc config Netlogon start= disabled
 sc delete Netlogon
+
+sc stop netprofm
+sc config netprofm start= disabled
+sc delete netprofm
 
 sc stop NetTcpPortSharing
 sc config NetTcpPortSharing start= disabled
@@ -136,9 +208,17 @@ sc stop NfsClnt
 sc config NfsClnt start= disabled
 sc delete NfsClnt
 
+sc stop OneSyncSvc
+sc config OneSyncSvc start= disabled
+sc delete OneSyncSvc
+
 sc stop p2pimsvc
 sc config p2pimsvc start= disabled
 sc delete p2pimsvc
+
+sc stop p2psvc
+sc config p2psvc start= disabled
+sc delete p2psvc
 
 sc stop PcaSvc
 sc config PcaSvc start= disabled
@@ -148,9 +228,21 @@ sc stop PeerDistSvc
 sc config PeerDistSvc start= disabled
 sc delete PeerDistSvc
 
+sc stop PerfHost
+sc config PerfHost start= disabled
+sc delete PerfHost
+
 sc stop PhoneSvc
 sc config PhoneSvc start= disabled
 sc delete PhoneSvc
+
+sc stop pla
+sc config pla start= disabled
+sc delete pla
+
+sc stop PolicyAgent
+sc config PolicyAgent start= disabled
+sc delete PolicyAgent
 
 sc stop PNRPAutoReg
 sc config PNRPAutoReg start= disabled
@@ -159,6 +251,14 @@ sc delete PNRPAutoReg
 sc stop PNRPsvc
 sc config PNRPsvc start= disabled
 sc delete PNRPsvc
+
+sc stop PrintNotify
+sc config PrintNotify start= disabled
+sc delete PrintNotify
+
+sc stop QWAVE
+sc config QWAVE start= disabled
+sc delete QWAVE
 
 sc stop RasAuto
 sc config RasAuto start= disabled
@@ -196,6 +296,14 @@ sc stop SENS
 sc config SENS start= disabled
 sc delete SENS
 
+sc stop SensorDataService
+sc config SensorDataService start= disabled
+sc delete SensorDataService
+
+sc stop SensorService
+sc config SensorService start= disabled
+sc delete SensorService
+
 sc stop SensrSvc
 sc config SensrSvc start= disabled
 sc delete SensrSvc
@@ -227,6 +335,10 @@ sc delete Spooler
 sc stop SSDPSRV
 sc config SSDPSRV start= disabled
 sc delete SSDPSRV
+
+sc stop SstpSvc
+sc config SstpSvc start= disabled
+sc delete SstpSvc
 
 sc stop ssh-agent
 sc config ssh-agent start= disabled
@@ -264,13 +376,53 @@ sc stop UevAgentService
 sc config UevAgentService start= disabled
 sc delete UevAgentService
 
+sc stop UI0Detect
+sc config UI0Detect start= disabled
+sc delete UI0Detect
+
 sc stop UmRdpService
 sc config UmRdpService start= disabled
 sc delete UmRdpService
 
-sc stop VaultSvc
-sc config VaultSvc start= disabled
-sc delete VaultSvc
+sc stop upnphost
+sc config upnphost start= disabled
+sc delete upnphost
+
+sc stop WebClient
+sc config WebClient start= disabled
+sc delete WebClient
+
+sc stop WalletService
+sc config WalletService start= disabled
+sc delete WalletService
+
+sc stop WbioSrvc
+sc config WbioSrvc start= disabled
+sc delete WbioSrvc
+
+sc stop Wcmsvc
+sc config Wcmsvc start= disabled
+sc delete Wcmsvc
+
+sc stop wcncsvc
+sc config wcncsvc start= disabled
+sc delete wcncsvc
+
+sc stop Wecsvc
+sc config Wecsvc start= disabled
+sc delete Wecsvc
+
+sc stop WerSvc
+sc config WerSvc start= disabled
+sc delete WerSvc
+
+sc stop wlidsvc
+sc config wlidsvc start= disabled
+sc delete wlidsvc
+
+sc stop wlidsvc
+sc config wlidsvc start= disabled
+sc delete wlidsvc
 
 sc stop vmicguestinterface
 sc config vmicguestinterface start= disabled
@@ -304,6 +456,10 @@ sc stop vmicvss
 sc config vmicvss start= disabled
 sc delete vmicvss
 
+sc stop W32Time
+sc config W32Time start= disabled
+sc delete W32Time
+
 sc stop WbioSrvc
 sc config WbioSrvc start= disabled
 sc delete WbioSrvc
@@ -328,6 +484,10 @@ sc stop WerSvc
 sc config <service_name> start= disabled
 sc delete WerSvc
 
+sc stop WinHttpAutoProxySvc
+sc config WinHttpAutoProxySvc start= disabled
+sc delete WinHttpAutoProxySvc
+
 sc stop WinRM
 sc config WinRM start= disabled
 sc delete WinRM
@@ -339,6 +499,14 @@ sc delete wisvc
 sc stop wlidsvc
 sc config wlidsvc start= disabled
 sc delete wlidsvc
+
+sc stop wmiApSrv
+sc config wmiApSrv start= disabled
+sc delete wmiApSrv
+
+sc stop WMPNetworkSvc
+sc config WMPNetworkSvc start= disabled
+sc delete WMPNetworkSvc
 
 sc stop WpcMonSvc
 sc config WpcMonSvc start= disabled
@@ -352,9 +520,21 @@ sc stop WMPNetworkSvc
 sc config WMPNetworkSvc start= disabled
 sc delete WMPNetworkSvc
 
+sc stop workfolderssvc
+sc config workfolderssvc start= disabled
+sc delete workfolderssvc
+
 sc stop WpnService
 sc config WpnService start= disabled
 sc delete WpnService
+
+sc stop wscsvc
+sc config wscsvc start= disabled
+sc delete wscsvc
+
+sc stop wuauserv
+sc config wuauserv start= disabled
+sc delete wuauserv
 
 sc stop XblAuthManager
 sc config XblAuthManager start= disabled
@@ -380,8 +560,14 @@ sc config CscService start= disabled
 sc stop DPS
 sc config DPS start= disabled
 
+sc stop EFS
+sc config EFS start= disabled
+
 sc stop iphlpsvc
 sc config iphlpsvc start= disabled
+
+sc stop RmSvc
+sc config RmSvc start= disabled
 
 sc stop SCardSvr
 sc config SCardSvr start= disabled
