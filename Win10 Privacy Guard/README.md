@@ -61,5 +61,5 @@ Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Reg
 
 ### TEST
 
-**Windows 10 1609**
-**Windows 10 1809**
+- **Windows 10 1609 LTSC**
+- **Windows 10 1809 LTSC**
